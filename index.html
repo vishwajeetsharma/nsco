@@ -46,18 +46,8 @@
                             <a class="nav-link" href="/about.html">About</a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/services.html">Services</a>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/service/trademark.html">Trademark</a></li>
-                                <li><a class="dropdown-item" href="/service/licensing.html">Licensing</a></li>
-                                <li><a class="dropdown-item" href="/service/audit.html">Audit</a></li>
-                                <li><a class="dropdown-item" href="/service/gst.html">GST</a></li>
-                                <li><a class="dropdown-item" href="/service/income_tax.html">Income Tax</a></li>
-                                <li><a class="dropdown-item" href="/service/roc_compliances.html">ROC</a></li>
-                                <li><a class="dropdown-item" href="/service/other_licenses.html">Other Licenses</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services.html">Services</a>
                         </li>
 
                         <li class="nav-item">
@@ -79,60 +69,287 @@
         </nav>
 
         <main>
+            <section class="about-section section-padding">
+                <style>
+                    .top-container {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        background-image: url('/images/logo.png');
+                        background-size: cover;
+                    }
 
-            <section class="hero-section hero-section-full-height">
-                <div class="container-fluid">
-                    <div class="row">
+                    .top-title {
+                        background-color: rgba(255, 255, 255, 0.7);
+                        padding: 20px;
+                        max-width: 80%;
+                        text-align: left;
+                        border-radius: 5px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    }
 
-                        <div class="col-lg-12 col-12 p-0">
-                            <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="images/slide/BANNER.webp" class="carousel-image img-fluid" alt="...">
-                                        
-                                        <!-- <div class="carousel-caption d-flex flex-column justify-content-end">
-                                            <h1>Test 1</h1>
-                                            
-                                            <p>Test Para 1</p>
-                                        </div> -->
-                                    </div>
+                    @media (max-width: 768px) {
+                        .top-container {
+                            flex-direction: column-reverse;
+                            text-align: center;
+                            background-image: none;
+                        }
 
-                                    <div class="carousel-item">
-                                        <img src="images/slide/BANNER2.webp" class="carousel-image img-fluid" alt="...">
-                                        
-                                        <!-- <div class="carousel-caption d-flex flex-column justify-content-end">
-                                            <h1>Test 2</h1>
-                                            
-                                            <p>Test para 2</p>
-                                        </div> -->
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <img src="images/slide/BANNER3.webp" class="carousel-image img-fluid" alt="...">
-                                        
-                                        <!-- <div class="carousel-caption d-flex flex-column justify-content-end">
-                                            <h1>Test 3</h1>
-                                            
-                                            <p>Test para 3</p>
-                                        </div> -->
-                                    </div>
-                                </div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-
-                                <button class="carousel-control-next" type="button" data-bs-target="#hero-slide" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-
+                        .top-title {
+                            margin-top: 20px;
+                            max-width: 100%;
+                        }
+                    }
+                </style>
+                <div class="top-container">
+                    <div class="top-title">
+                        <h1>Your Title</h1>
+                        <p>Your subtitle or additional content can go here.</p>
                     </div>
                 </div>
             </section>
+
+            <section class="cta-section section-padding section-bg">
+                <style>
+                    .counter-container{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-evenly;
+                    }
+                    .counter-container .counter-parent-div{
+                        width: 15%;
+                    }
+                    .counter-container .counter-parent-div div{
+                        display: flex;
+                    }
+                    @media (max-width: 920px) {
+                        .counter-container .counter-parent-div{
+                            width: 100%;
+                        }
+                        .counter-container{
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        }
+                        .counter-container .counter-parent-div div{
+                            text-align: center;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                </style>
+                <div class="container counter-container">
+
+                    <div class="counter-parent-div counter-thumb">
+                        <div>
+                            <span class="counter-number" data-from="1" data-to="17.5" data-speed="500"></span>
+                            <span class="counter-number-text">M</span>
+                        </div>
+                        <p>Funds raised by Start-ups mentored</p>
+                    </div>
+
+                    <div class="counter-parent-div counter-thumb">
+                        <div>
+                            <span class="counter-number" data-from="1" data-to="50" data-speed="500"></span>
+                            <span class="counter-number-text">+</span>
+                        </div>
+                        <p>Companies Registered</p>
+                    </div>
+
+                    <div class="counter-parent-div counter-thumb">
+                        <div>
+                            <span class="counter-number" data-from="1" data-to="250" data-speed="500"></span>
+                            <span class="counter-number-text">+</span>
+                        </div>
+                        <p>Audits Concluded</p>
+                    </div>
+
+                    <div class="counter-parent-div counter-thumb">
+                        <div>
+                            <span class="counter-number" data-from="1" data-to="25" data-speed="500"></span>
+                            <span class="counter-number-text">+</span>
+                        </div>
+                        <p>Trademark Registered</p>
+                    </div>
+
+                    <div class="counter-parent-div counter-thumb">
+                        <div>
+                            <span class="counter-number" data-from="1" data-to="10" data-speed="500"></span>
+                            <span class="counter-number-text">+</span>
+                        </div>
+                        <p>Start-ups Mentored</p>
+                    </div>
+
+                    <div class="counter-parent-div counter-thumb">
+                        <div>
+                            <span class="counter-number" data-from="1" data-to="30" data-speed="500"></span>
+                            <span class="counter-number-text">+</span>
+                        </div>
+                        <p>Korean Companies in Korean Corridor</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section-padding section-bg" id="section_2">
+                <div style="padding: 0 100px;">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="custom-text-box mb-lg-0" style="position: relative;">
+                                        <div style="position: absolute; top: -22px; left: -25px; padding: 10px; border-radius: 50%; background-color: var(--secondary-color);">
+                                            <img src="/images/special/icons/other_license.png" height="46px" alt="">
+                                        </div>
+                                        <h5 class="mb-3">
+                                            Register Your business
+                                        </h5>
+
+                                        <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+
+                                        <a class="view-more-link" href="/service/category/register.html">View more &rarr;</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="custom-text-box mb-lg-0">
+                                        <h5 class="mb-3">Manage Your business</h5>
+
+                                        <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+
+                                        <a class="view-more-link" href="/service/category/manage.html">View more &rarr;</a>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                            <br>                            
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="custom-text-box mb-lg-0">
+                                        <h5 class="mb-3">Grow with us</h5>
+
+                                        <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+
+                                        <a class="view-more-link" href="/service/category/grow.html">View more &rarr;</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="custom-text-box mb-lg-0">
+                                        <h5 class="mb-3">Protect Your business</h5>
+
+                                        <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+
+                                        <a class="view-more-link" href="/service/category/protect.html">View more &rarr;</a>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div class="custom-text-block right-area-services">
+                                <h2 style="font-size: 40px;" class="mb-0">
+                                    <div class="typing-container">
+                                        One Stop Solution for  
+                                        <span id="text" style="color: var(--primary-color);"></span><span style="color: var(--primary-color);" id="cursor">|</span>
+                                    </div>
+                                </h2>
+                                <div style="text-align: left; width: 90%;">
+                                    <p style="font-size: 22px;">Enterprise Grade Services with ... we will fulfil your needs...</p>
+                                </div>
+                                <div style="text-align: left; width: 90%;">
+                                    <a style="width: 245px;" class="nav-link custom-btn custom-border-btn btn" href="/contact.html">Request a demo</a>
+                                </div>
+                            </div>    
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <style>
+                     .view-more-link{
+                        font-size: 20px;
+                        color: var(--primary-color);
+                        font-weight: 500;
+                     }
+                     .view-more-link:hover{
+                        color: var(--secondary-color);
+                     }
+                    .typing-container {
+                        font-size: 70px;
+                        display: inline-block;
+                        padding: 20px;
+                    }
+
+                    #cursor {
+                        animation: blink 0.7s infinite;
+                    }
+
+                    @keyframes blink {
+                        0%, 100% {
+                            opacity: 1;
+                        }
+                        50% {
+                            opacity: 0;
+                        }
+                    }
+                    .right-area-services{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 85%;
+                    }
+                    @media (max-width: 768px) {
+                        .typing-container{
+                            font-size: 40px;
+                        }
+                    }
+                  </style>
+                  
+                  <script>
+                    const textElement = document.getElementById('text');
+                    const cursorElement = document.getElementById('cursor');
+                    const texts = ["Audit", "Book Keeping", "Copyright", "GST", "Income Tax", "Licensing", "Trademark"];
+                    let textIndex = 0;
+                    let charIndex = 0;
+
+                    function type() {
+                        if (charIndex < texts[textIndex].length) {
+                            textElement.textContent += texts[textIndex].charAt(charIndex);
+                            charIndex++;
+                            setTimeout(type, 100); // Adjust typing speed here (milliseconds)
+                        } else {
+                            setTimeout(erase, 1000); // Wait for a second before erasing
+                        }
+                    }
+
+                    function erase() {
+                        if (charIndex > 0) {
+                            textElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+                            charIndex--;
+                            setTimeout(erase, 50); // Adjust erasing speed here (milliseconds)
+                        } else {
+                            textIndex = (textIndex + 1) % texts.length;
+                            setTimeout(type, 1000); // Wait for a second before typing the next text
+                        }
+                    }
+
+                    type();
+                  </script>
+
+            </section>
+                  
+
+            
             <section class="section-padding" id="section_3">
                 <div class="container">
                     <div class="row">
@@ -194,120 +411,6 @@
                 </div>
             </section>
 
-
-            <section class="section-padding">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-10 col-12 text-center mx-auto">
-                            <h2 class="mb-5">Manage Your Business with NSCO</h2>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="featured-block d-flex justify-content-center align-items-center">
-                                <a href="/service/audit.html" class="d-block">
-                                    <img src="images/special/icons/audit.png" class="featured-block-image img-fluid" alt="">
-
-                                    <p class="featured-block-text"><strong>Audit</strong></p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-                            <div class="featured-block d-flex justify-content-center align-items-center">
-                                <a href="/service/gst.html" class="d-block">
-                                    <img src="images/special/icons/gst.png" class="featured-block-image img-fluid" alt="">
-
-                                    <p class="featured-block-text"><strong>GST</strong></p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-                            <div class="featured-block d-flex justify-content-center align-items-center">
-                                <a href="/service/income_tax.html" class="d-block">
-                                    <img src="images/special/icons/income_tax.png" class="featured-block-image img-fluid" alt="">
-
-                                    <p class="featured-block-text"><strong>Income Tax</strong></p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="featured-block d-flex justify-content-center align-items-center">
-                                <a href="/service/book_keeping_and_advisory.html" class="d-block">
-                                    <img src="images/special/icons/book_keeping.png" class="featured-block-image img-fluid" alt="">
-
-                                    <p class="featured-block-text"><strong>Book Keeping and Advisory</strong></p>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            
-            
-
-            <section class="section-padding">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-10 col-12 text-center mx-auto">
-                            <h2 class="mb-5">Grow Your Business with NSCO</h2>
-                        </div>
-
-                        <style>
-                            .business-protect-card{
-                                max-height: 300px;
-                            }
-                            .business-protect-card img{
-                                max-height: 200px;
-                            }
-                        </style>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 business-protect-card">
-                            <div class="featured-block d-flex justify-content-center align-items-center business-protect-card">
-                                <a href="/service/roc_compliances.html" class="d-block">
-                                    <img src="images/special/icons/ROC_compliences.png" class="featured-block-image img-fluid" alt="">
-
-                                    <p class="featured-block-text"><strong>ROC Compliances</strong></p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4 business-protect-card">
-                            <div class="featured-block d-flex justify-content-center align-items-center business-protect-card">
-                                <a href="/startup.html" class="d-block">
-                                    <img src="images/special/Rocket/Rocket1.webp" class="featured-block-image img-fluid" alt="">
-
-                                    <p class="featured-block-text"><strong>Start-up Services</strong></p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4 business-protect-card">
-                            <div class="featured-block d-flex justify-content-center align-items-center business-protect-card">
-                                <a href="/service/other_licenses.html" class="d-block">
-                                    <img src="images/special/icons/other_license.png" class="featured-block-image img-fluid" alt="">
-
-                                    <p class="featured-block-text"><strong>Other Licenses</strong></p>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-
-           
-
-            
-
-            
-
             <section class="cta-section section-padding section-bg">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
@@ -319,313 +422,56 @@
                         <div class="col-lg-5 col-12">
                             <!-- <a href="#" class="me-4">Make a donation</a> -->
 
-                            <a href="#section_4" class="custom-btn btn smoothscroll">Contact Us now</a>
+                            <a href="/contact.html" class="custom-btn btn smoothscroll">Contact Us now</a>
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            
-
-            <!-- <section class="volunteer-section section-padding" id="section_4">
+            <section class="about-section section-padding">
+                <style>
+                    .start-your-business-image{
+                        width: auto;
+                        height: 500px !important;
+                        /* padding: 50px; */
+                    }
+                    @media (min-width: 920px) {
+                        .start-your-business-image{
+                            margin-left: 100px;
+                        }
+                    }
+                </style>
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-6 col-12">
-                            <h2 class="text-white mb-4">Volunteer</h2>
+                        
 
-                            <form class="custom-form volunteer-form mb-5 mb-lg-0" action="#" method="post" role="form">
-                                <h3 class="mb-4">Become a volunteer today</h3>
-
-                                <div class="row">
-                                    <div class="col-lg-6 col-12">
-                                        <input type="text" name="volunteer-name" id="volunteer-name" class="form-control" placeholder="Jack Doe" required>
-                                    </div>
-
-                                    <div class="col-lg-6 col-12">    
-                                        <input type="email" name="volunteer-email" id="volunteer-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com" required>
-                                    </div>
-
-                                    <div class="col-lg-6 col-12">
-                                        <input type="text" name="volunteer-subject" id="volunteer-subject" class="form-control" placeholder="Subject" required>
-                                    </div>
-
-                                    <div class="col-lg-6 col-12">
-                                        <div class="input-group input-group-file">
-                                            <input type="file" class="form-control" id="inputGroupFile02">
-                                            
-                                            <label class="input-group-text" for="inputGroupFile02">Upload your CV</label>
-
-                                            <i class="bi-cloud-arrow-up ms-auto"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <textarea name="volunteer-message" rows="3" class="form-control" id="volunteer-message" placeholder="Comment (Optional)"></textarea>
-
-                                <button type="submit" class="form-control">Submit</button>
-                            </form>
+                        <div class="col-lg-6 col-md-5 col-12">
+                            <img src="images/special/Rocket/Rocket1bg.webp" class="start-your-business-image about-image ms-lg-auto bg-light shadow-lg img-fluid" alt="">
                         </div>
 
-                        <div class="col-lg-6 col-12">
-                            <img src="images/smiling-casual-woman-dressed-volunteer-t-shirt-with-badge.jpg" class="volunteer-image img-fluid" alt="">
+                        <div class="col-lg-5 col-md-7 col-12">
+                            <div class="custom-text-block">
+                                <h2 style="font-size: 40px;" class="mb-0">Start your business with NSCO</h2>
+                                <h3>Registration</h3>
+                                <br>
 
-                            <div class="custom-block-body text-center">
-                                <h4 class="text-white mt-lg-3 mb-lg-3">About Volunteering</h4>
-
-                                <p class="text-white">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional charity theme based</p>
+                                <h5 class="mb-3"><li>Private Limited Company</li></h5>
+                                <h5 class="mb-3"><li>Public Limited Company</li></h5>
+                                <h5 class="mb-3"><li>One Person Company</li></h5>
+                                <h5 class="mb-3"><li>Limited Liability Partnership</li></h5>
+                                <h5 class="mb-3"><li>Partnership Firm</li></h5>
+                                <h5 class="mb-3"><li>Sole Properietorship</li></h5>
+                                <h5 class="mb-3"><li>AOP/BOI</li></h5>
+                                <h5 class="mb-3"><li>NGO/Section 8 Company</li></h5>
                             </div>
                         </div>
+
 
                     </div>
                 </div>
-            </section> -->
-
-            <!-- <section class="news-section section-padding" id="section_5">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12 mb-5">
-                            <h2>Latest News</h2>
-                        </div>
-
-                        <div class="col-lg-7 col-12">
-                            <div class="news-block">
-                                <div class="news-block-top">
-                                    <a href="news-detail.html">
-                                        <img src="images/news/medium-shot-volunteers-with-clothing-donations.jpg" class="news-image img-fluid" alt="">
-                                    </a>
-
-                                    <div class="news-category-block">
-                                        <a href="#" class="category-block-link">
-                                            Lifestyle,
-                                        </a>
-
-                                        <a href="#" class="category-block-link">
-                                            Clothing Donation
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="news-block-info">
-                                    <div class="d-flex mt-2">
-                                        <div class="news-block-date">
-                                            <p>
-                                                <i class="bi-calendar4 custom-icon me-1"></i>
-                                                October 12, 2036
-                                            </p>
-                                        </div>
-
-                                        <div class="news-block-author mx-5">
-                                            <p>
-                                                <i class="bi-person custom-icon me-1"></i>
-                                                By Admin
-                                            </p>
-                                        </div>
-
-                                        <div class="news-block-comment">
-                                            <p>
-                                                <i class="bi-chat-left custom-icon me-1"></i>
-                                                32 Comments
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="news-block-title mb-2">
-                                        <h4><a href="news-detail.html" class="news-block-title-link">Clothing donation to urban area</a></h4>
-                                    </div>
-
-                                    <div class="news-block-body">
-                                        <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional charity theme based on Bootstrap</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="news-block mt-3">
-                                <div class="news-block-top">
-                                    <a href="news-detail.html">
-                                        <img src="images/news/medium-shot-people-collecting-foodstuff.jpg" class="news-image img-fluid" alt="">
-                                    </a>
-
-                                    <div class="news-category-block">
-                                        <a href="#" class="category-block-link">
-                                            Food,
-                                        </a>
-
-                                        <a href="#" class="category-block-link">
-                                            Donation,
-                                        </a>
-
-                                        <a href="#" class="category-block-link">
-                                            Caring
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="news-block-info">
-                                    <div class="d-flex mt-2">
-                                        <div class="news-block-date">
-                                            <p>
-                                                <i class="bi-calendar4 custom-icon me-1"></i>
-                                                October 20, 2036
-                                            </p>
-                                        </div>
-
-                                        <div class="news-block-author mx-5">
-                                            <p>
-                                                <i class="bi-person custom-icon me-1"></i>
-                                                By Admin
-                                            </p>
-                                        </div>
-
-                                        <div class="news-block-comment">
-                                            <p>
-                                                <i class="bi-chat-left custom-icon me-1"></i>
-                                                35 Comments
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="news-block-title mb-2">
-                                        <h4><a href="news-detail.html" class="news-block-title-link">Food donation area</a></h4>
-                                    </div>
-
-                                    <div class="news-block-body">
-                                        <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus elementum, tempor risus vel, condimentum orci</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 mx-auto">
-                            <form class="custom-form search-form" action="#" method="get" role="form">
-                                <input name="search" type="search" class="form-control" id="search" placeholder="Search" aria-label="Search">
-
-                                <button type="submit" class="form-control">
-                                    <i class="bi-search"></i>
-                                </button>
-                            </form>
-
-                            <h5 class="mt-5 mb-3">Recent news</h5>
-
-                            <div class="news-block news-block-two-col d-flex mt-4">
-                                <div class="news-block-two-col-image-wrap">
-                                    <a href="news-detail.html">
-                                        <img src="images/news/africa-humanitarian-aid-doctor.jpg" class="news-image img-fluid" alt="">
-                                    </a>
-                                </div>
-
-                                <div class="news-block-two-col-info">
-                                    <div class="news-block-title mb-2">
-                                        <h6><a href="news-detail.html" class="news-block-title-link">Food donation area</a></h6>
-                                    </div>
-
-                                    <div class="news-block-date">
-                                        <p>
-                                            <i class="bi-calendar4 custom-icon me-1"></i>
-                                            October 16, 2036
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="news-block news-block-two-col d-flex mt-4">
-                                <div class="news-block-two-col-image-wrap">
-                                    <a href="news-detail.html">
-                                        <img src="images/news/close-up-happy-people-working-together.jpg" class="news-image img-fluid" alt="">
-                                    </a>
-                                </div>
-
-                                <div class="news-block-two-col-info">
-                                    <div class="news-block-title mb-2">
-                                        <h6><a href="news-detail.html" class="news-block-title-link">Volunteering Clean</a></h6>
-                                    </div>
-
-                                    <div class="news-block-date">
-                                        <p>
-                                            <i class="bi-calendar4 custom-icon me-1"></i>
-                                            October 24, 2036
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="category-block d-flex flex-column">
-                                <h5 class="mb-3">Categories</h5>
-
-                                <a href="#" class="category-block-link">
-                                    Drinking water
-                                    <span class="badge">20</span>
-                                </a>
-
-                                <a href="#" class="category-block-link">
-                                    Food Donation
-                                    <span class="badge">30</span>
-                                </a>
-
-                                <a href="#" class="category-block-link">
-                                    Children Education
-                                    <span class="badge">10</span>
-                                </a>
-
-                                <a href="#" class="category-block-link">
-                                    Poverty Development
-                                    <span class="badge">15</span>
-                                </a>
-
-                                <a href="#" class="category-block-link">
-                                    Clothing Donation
-                                    <span class="badge">20</span>
-                                </a>
-                            </div>
-
-                            <div class="tags-block">
-                                <h5 class="mb-3">Tags</h5>
-
-                                <a href="#" class="tags-block-link">
-                                    Donation
-                                </a>
-
-                                <a href="#" class="tags-block-link">
-                                    Clothing
-                                </a>
-
-                                <a href="#" class="tags-block-link">
-                                    Food
-                                </a>
-
-                                <a href="#" class="tags-block-link">
-                                    Children
-                                </a>
-
-                                <a href="#" class="tags-block-link">
-                                    Education
-                                </a>
-
-                                <a href="#" class="tags-block-link">
-                                    Poverty
-                                </a>
-
-                                <a href="#" class="tags-block-link">
-                                    Clean Water
-                                </a>
-                            </div>
-
-                            <form class="custom-form subscribe-form" action="#" method="get" role="form">
-                                <h5 class="mb-4">Newsletter Form</h5>
-
-                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email Address" required>
-
-                                <div class="col-lg-12 col-12">
-                                    <button type="submit" class="form-control">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </section> -->
+            </section>
 
 
             <section class="testimonial-section section-padding section-bg">
@@ -771,50 +617,95 @@
                     </div>
                 </div>
             </section>
+        </section>
 
-            <section class="about-section section-padding">
-                <style>
-                    .start-your-business-image{
-                        width: auto;
-                        height: 500px !important;
-                        /* padding: 50px; */
+        <section class="section-padding" id="section_3">
+            <style>
+                .logos{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    position: relative;
+                    padding: 25px 0px;
+                    margin-top: 15px;
+                }
+                .logos:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 150px;
+                    height: 100%;
+                    background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+                    content: '';
+                    z-index: 2;
+                }
+                .logos:after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 150px;
+                    height: 100%;
+                    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+                    content: '';
+                    z-index: 2;
+                }
+                .logos:hover .logos-slide{
+                    animation-play-state: paused;
+                }
+                .logos-slide{
+                    display: inline-block;
+                    animation: 25s logo_slide infinite linear;
+                }
+                .logos-slide img{
+                    height: 35px;
+                    margin: 0 25px;
+                }
+                @keyframes logo_slide {
+                    from {
+                        transform: translateX(0);
                     }
-                    @media (min-width: 920px) {
-                        .start-your-business-image{
-                            margin-left: 100px;
-                        }
+                    to {
+                        transform: translateX(-100%);
                     }
-                </style>
-                <div class="container">
-                    <div class="row">
+                }
+            </style>
+            <div class="container">
+                <div class="row">
 
-                        
-
-                        <div class="col-lg-6 col-md-5 col-12">
-                            <img src="images/special/Rocket/Rocket1bg.webp" class="start-your-business-image about-image ms-lg-auto bg-light shadow-lg img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-5 col-md-7 col-12">
-                            <div class="custom-text-block">
-                                <h2 style="font-size: 40px;" class="mb-0">Start your business with NSCO</h2>
-                                <h3>Registration</h3>
-                                <br>
-
-                                <h5 class="mb-3"><li>Private Limited Company</li></h5>
-                                <h5 class="mb-3"><li>Public Limited Company</li></h5>
-                                <h5 class="mb-3"><li>One Person Company</li></h5>
-                                <h5 class="mb-3"><li>Limited Liability Partnership</li></h5>
-                                <h5 class="mb-3"><li>Partnership Firm</li></h5>
-                                <h5 class="mb-3"><li>Sole Properietorship</li></h5>
-                                <h5 class="mb-3"><li>AOP/BOI</li></h5>
-                                <h5 class="mb-3"><li>NGO/Section 8 Company</li></h5>
-                            </div>
-                        </div>
-
-
+                    <div class="col-lg-12 col-12 text-center mb-4">
+                        <h2>Clients Served</h2>
                     </div>
+
+                    <div class="col-lg-12 col-12 logos">
+                        <div class="logos-slide">
+                            <a href="" target="_blank"><img src="/images/brand_logo/1.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/2.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/3.webp" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/4.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/5.jpg" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/6.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/7.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/8.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/9.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/10.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/11.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/12.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/13.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/14.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/15.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/16.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/17.png" alt=""></a>
+                            <a href="" target="_blank"><img src="/images/brand_logo/18.jpg" alt=""></a>
+                        </div>
+                    </div>
+
                 </div>
-            </section>
+            </div>
+            <script>
+                var copy = document.querySelector('.logos-slide').cloneNode(true);
+                document.querySelector('.logos').appendChild(copy);
+            </script>
+        </section>
+
             <section class="testimonial-section section-padding section-bg">
                 <div class="container">
                     <div class="main-timeline">
@@ -1150,167 +1041,7 @@
     }
 }
                     </style>
-            </section>
-
-            <section class="cta-section section-padding section-bg">
-                <style>
-                    .counter-container{
-                        display: flex;
-                        width: 100%;
-                        justify-content: space-evenly;
-                    }
-                    .counter-container .counter-parent-div{
-                        width: 15%;
-                    }
-                    .counter-container .counter-parent-div div{
-                        display: flex;
-                    }
-                    @media (max-width: 920px) {
-                        .counter-container .counter-parent-div{
-                            width: 100%;
-                        }
-                        .counter-container{
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                        }
-                        .counter-container .counter-parent-div div{
-                            text-align: center;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                    }
-                </style>
-                <div class="container counter-container">
-
-                    <div class="counter-parent-div counter-thumb">
-                        <div>
-                            <span class="counter-number" data-from="1" data-to="17.5" data-speed="500"></span>
-                            <span class="counter-number-text">M</span>
-                        </div>
-                        <p>Funds raised by Start-ups mentored</p>
-                    </div>
-
-                    <div class="counter-parent-div counter-thumb">
-                        <div>
-                            <span class="counter-number" data-from="1" data-to="50" data-speed="500"></span>
-                            <span class="counter-number-text">+</span>
-                        </div>
-                        <p>Companies Registered</p>
-                    </div>
-
-                    <div class="counter-parent-div counter-thumb">
-                        <div>
-                            <span class="counter-number" data-from="1" data-to="250" data-speed="500"></span>
-                            <span class="counter-number-text">+</span>
-                        </div>
-                        <p>Audits Concluded</p>
-                    </div>
-
-                    <div class="counter-parent-div counter-thumb">
-                        <div>
-                            <span class="counter-number" data-from="1" data-to="25" data-speed="500"></span>
-                            <span class="counter-number-text">+</span>
-                        </div>
-                        <p>Trademard Registered</p>
-                    </div>
-
-                    <div class="counter-parent-div counter-thumb">
-                        <div>
-                            <span class="counter-number" data-from="1" data-to="10" data-speed="500"></span>
-                            <span class="counter-number-text">+</span>
-                        </div>
-                        <p>Start-ups Mentored</p>
-                    </div>
-
-                    <div class="counter-parent-div counter-thumb">
-                        <div>
-                            <span class="counter-number" data-from="1" data-to="30" data-speed="500"></span>
-                            <span class="counter-number-text">+</span>
-                        </div>
-                        <p>Korean Companies in Korean Corridor</p>
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="section-padding" id="section_3">
-                <style>
-                    .logos{
-                        overflow: hidden;
-                        white-space: nowrap;
-                        position: relative;
-                        padding: 25px 0px;
-                        margin-top: 15px;
-                    }
-                    .logos:before {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 150px;
-                        height: 100%;
-                        background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-                        content: '';
-                        z-index: 2;
-                    }
-                    .logos:after {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        width: 150px;
-                        height: 100%;
-                        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-                        content: '';
-                        z-index: 2;
-                    }
-                    .logos:hover .logos-slide{
-                        animation-play-state: paused;
-                    }
-                    .logos-slide{
-                        display: inline-block;
-                        animation: 15s logo_slide infinite linear;
-                    }
-                    .logos-slide img{
-                        height: 35px;
-                        margin: 0 25px;
-                    }
-                    @keyframes logo_slide {
-                        from {
-                            transform: translateX(0);
-                        }
-                        to {
-                            transform: translateX(-100%);
-                        }
-                    }
-                </style>
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12 text-center mb-4">
-                            <h2>Clients Served</h2>
-                        </div>
-
-                        <div class="col-lg-12 col-12 logos">
-                            <div class="logos-slide">
-                                <a href="" target="_blank"><img src="/favicon.ico" alt=""></a>
-                                <a href="" target="_blank"><img src="/images/logo.png" alt=""></a>
-                                <a href="https://bookishsanta.com/" target="_blank"><img src="/images/brand_logo/bookish_santa.webp" alt=""></a>
-                                <a href="https://bac.co.kr/" target="_blank"><img src="https://bac.co.kr/assets/img/logo.png" alt=""></a>
-                                <a href="http://www.dongileng.co.kr/?module=Html&action=SiteComp_e&sSubNo=1" target="_blank"><img src="http://www.dongileng.co.kr/eng/img/index/logo.jpg" alt=""></a>
-                                <a href="https://rideedison.com/" target="_blank"><img src="https://rideedison.com/_nuxt/img/logo.088b96b.svg" alt=""></a>
-                                <a href="" target="_blank"><img src="/images/logo.png" alt=""></a>
-                                <a href="" target="_blank"><img src="/images/logo.png" alt=""></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <script>
-                    var copy = document.querySelector('.logos-slide').cloneNode(true);
-                    document.querySelector('.logos').appendChild(copy);
-                </script>
-            </section>
+            
             
 
 
@@ -1509,6 +1240,43 @@
             </div>
 
         </footer>
+        <div class="whatsapp-icon">
+            <a href="https://wa.me/+919910856111" target="_blank">
+                <img src="https://img.icons8.com/clouds/100/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+        <style>
+            .whatsapp-icon {
+                position: fixed;
+                bottom: 10px; /* Adjust the distance from the bottom as needed */
+                right: 20px; /* Adjust the distance from the left as needed */
+                z-index: 999; /* Ensure it's above other elements on the page */
+                transition: transform 0.3s ease-in-out; /* Add smooth animation for hover */
+            }
+
+            /* Style for the WhatsApp icon image */
+            .whatsapp-icon img {
+                width: 70px; /* Adjust the width of the icon as needed */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            /* Style for hover effect */
+            .whatsapp-icon:hover {
+                transform: scale(1.1); /* Enlarge the icon on hover */
+            }
+            @media (max-width: 768px) {
+                /* Adjust the icon's position for smaller screens */
+                .whatsapp-icon {
+                    bottom: 10px;
+                    right: 10px;
+                }
+
+                /* Adjust the icon's size for smaller screens */
+                .whatsapp-icon img {
+                    width: 60px;
+                }
+            }
+        </style>
 
         <!-- JAVASCRIPT FILES -->
         <script src="/js/jquery.min.js"></script>
