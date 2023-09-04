@@ -69,46 +69,66 @@
         </nav>
 
         <main>
-            <section class="about-section section-padding">
+
+            <section style="padding-bottom: 100px; padding-top: 40px;">
+
                 <style>
-                    .top-container {
+                    .about-section-new{
+                        display: flex;
+                        padding: 0 150px;
+                        justify-content: space-around;
+                    }
+                    .about-image-new img{
+                        max-width: 100%;
+                        min-width: 38vw;
+                    }
+                    .about-content-new{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        align-items: center;
-                        height: 100vh;
-                        background-image: url('/images/logo.png');
-                        background-size: cover;
+                        padding: 25px;
+                        row-gap: 15px;
                     }
-
-                    .top-title {
-                        background-color: rgba(255, 255, 255, 0.7);
-                        padding: 20px;
-                        max-width: 80%;
-                        text-align: left;
-                        border-radius: 5px;
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    .about-content-new p{
+                        font-size: 20px;
                     }
-
+                    .about-content-new h1{
+                        font-size: 45px;
+                        color: var(--secondary-color);
+                    }
+                    .about-content-new h3{
+                        color: var(--primary-color);
+                    }
                     @media (max-width: 768px) {
-                        .top-container {
-                            flex-direction: column-reverse;
-                            text-align: center;
-                            background-image: none;
+                        .about-section-new{
+                            flex-direction: column;
+                            width: 100%;
+                            justify-content: center;
+                            padding: 0px 0;
                         }
 
-                        .top-title {
-                            margin-top: 20px;
-                            max-width: 100%;
-                        }
                     }
                 </style>
-                <div class="top-container">
-                    <div class="top-title">
-                        <h1>Your Title</h1>
-                        <p>Your subtitle or additional content can go here.</p>
+
+                <div class="about-section-new">
+
+
+                    <div class="about-content-new">
+                        <h1>NSCO Consulting Private Limited</h1>
+                        <p>
+                            NSCO is a boutique financial and advisory services firm dedicated to empowering clients through expert financial guidance, a focus on results, and a commitment to creating a strong financial ecosystem that supports their core competencies.
+
+                        </p>
+                        
+                        <a style="width: 245px;" class="nav-link custom-btn custom-border-btn btn" href="/contact.html">Enquire Now</a>
+                    </div> 
+
+                    <div class="about-image-new">
+                        <img src="/images/Consulting-bro.svg" alt="">
                     </div>
+
                 </div>
+                
             </section>
 
             <section class="cta-section section-padding section-bg">
@@ -202,11 +222,8 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="custom-text-box mb-lg-0" style="position: relative;">
-                                        <div style="position: absolute; top: -22px; left: -25px; padding: 10px; border-radius: 50%; background-color: var(--secondary-color);">
-                                            <img src="/images/special/icons/other_license.png" height="46px" alt="">
-                                        </div>
-                                        <h5 class="mb-3">
-                                            Register Your business
+                                        <h5 style="font-size: 20px;" class="mb-3">
+                                            <img height="40px" src="/images/icons/small-gov.svg" alt=""> Register Your business
                                         </h5>
 
                                         <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
@@ -217,7 +234,8 @@
 
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="custom-text-box mb-lg-0">
-                                        <h5 class="mb-3">Manage Your business</h5>
+                                        <h5 style="font-size: 20px;" class="mb-3">
+                                            <img height="30px" src="/images/icons/small-settings.svg" alt=""> Manage Your business</h5>
 
                                         <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
 
@@ -231,7 +249,8 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="custom-text-box mb-lg-0">
-                                        <h5 class="mb-3">Grow with us</h5>
+                                        <h5 style="font-size: 20px;" class="mb-3">
+                                            <img height="40px" src="/images/icons/small-rocket.svg" alt=""> Grow with us</h5>
 
                                         <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
 
@@ -241,7 +260,8 @@
 
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="custom-text-box mb-lg-0">
-                                        <h5 class="mb-3">Protect Your business</h5>
+                                        <h5 style="font-size: 20px;" class="mb-3">
+                                            <img height="30px" src="/images/icons/small-legal.svg" alt=""> Protect Your business</h5>
 
                                         <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
 
@@ -284,7 +304,7 @@
                         color: var(--secondary-color);
                      }
                     .typing-container {
-                        font-size: 70px;
+                        font-size: 60px;
                         display: inline-block;
                         padding: 20px;
                     }
@@ -706,6 +726,291 @@
             </script>
         </section>
 
+        <section class="section-padding testimonial-carousel-new section-bg">
+            <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+            <script src="/js/swiper-bundle.min.js"></script>
+            
+            <style>
+                .swiper-button-next, .swiper-button-prev {
+                    color: var(--primary-color);
+                }
+                .swiper-pagination-bullet-active {
+                    background-color: var(--primary-color); /* Change to your desired color */
+                }
+                .testimonial-carousel-new{
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 80vh;
+                }
+                .slide-container{
+                    max-width: 90%;
+                    padding: 25px;
+                }
+                .slide-content{
+                    margin: 0 40px;
+                    padding: 45px 20px;
+                    overflow: hidden;
+                }
+                .card{
+                    border: none;
+                    border-radius: 25px;
+                    background-color: #fff;
+                }
+                .overlay{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: var(--secondary-color);
+                    border-radius: 25px 25px 0 25px;
+                }
+                .overlay::before,
+                .overlay::after{
+                    content: '';
+                    position: absolute;
+                    height: 40px;
+                    width: 40px;
+                    background-color: var(--secondary-color);
+                    right: 0;
+                    bottom: -40px;
+                }
+                .overlay::after{
+                    background-color: #fff;
+                    border: none;
+                    border-radius: 0 25px 0 0;
+                }
+                .image-content{
+                    position: relative;
+                    row-gap: 5px;
+                }
+                .card-image{
+                    position: relative;
+                    height: 150px;
+                    width: 150px;
+                    border-radius: 50%;
+                    padding: 6px;
+                }
+                .card-image .card-img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 4px solid var(--primary-color);
+                }
+                .image-content,
+                .card-content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px 14px;
+                }
+                .card-content .description{
+                    text-align: center;
+                }
+                .card-content .post{
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 768px) {
+                    .swiper-button-next, .swiper-button-prev {
+                        display: none;
+                    }
+                    .slide-content{
+                        margin: 0 10px;
+                    }
+                }
+            </style>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Santa Test</h2>
+                                <h4 class="post">Co-Founder BookishSanta</h4>
+                                <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Santa Test</h2>
+                                <h4 class="post">Co-Founder BookishSanta</h4>
+                                <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Santa Test</h2>
+                                <h4 class="post">Co-Founder BookishSanta</h4>
+                                <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Santa Test</h2>
+                                <h4 class="post">Co-Founder BookishSanta</h4>
+                                <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Santa Test</h2>
+                                <h4 class="post">Co-Founder BookishSanta</h4>
+                                <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Santa Test</h2>
+                                <h4 class="post">Co-Founder BookishSanta</h4>
+                                <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Santa Test</h2>
+                                <h4 class="post">Co-Founder BookishSanta</h4>
+                                <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Santa Test</h2>
+                                <h4 class="post">Co-Founder BookishSanta</h4>
+                                <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Santa Test</h2>
+                                <h4 class="post">Co-Founder BookishSanta</h4>
+                                <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination" style="margin-top: 15px; color: var(--primary-color); !important"></div>
+            </div>
+            <script>
+                var swiper = new Swiper(".slide-content", {
+                  slidesPerView: 3,
+                  spaceBetween: 25,
+                  centerSlide: true,
+                  face: true,
+                  grabCursor: true,
+                  loop: true,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    dynamicBullets: true,
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                  breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    520: {
+                        slidesPerView: 2,
+                    },
+                    950: {
+                        slidesPerView: 3,
+                    }
+                  }
+                });
+              </script>
+        </section>
+
             <section class="testimonial-section section-padding section-bg">
                 <div class="container">
                     <div class="main-timeline">
@@ -1041,93 +1346,10 @@
     }
 }
                     </style>
-            
-            
-
-
-            <!-- <section class="contact-section section-padding" id="section_6">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-4 col-12 ms-auto mb-5 mb-lg-0">
-                            <div class="contact-info-wrap">
-                                <h2>Get in touch</h2>
-
-                                <div class="contact-image-wrap d-flex flex-wrap">
-                                    <img src="images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg" class="img-fluid avatar-image" alt="">
-
-                                    <div class="d-flex flex-column justify-content-center ms-3">
-                                        <p class="mb-0">Clara Barton</p>
-                                        <p class="mb-0"><strong>HR & Office Manager</strong></p>
-                                    </div>
-                                </div>
-
-                                <div class="contact-info">
-                                    <h5 class="mb-3">Contact Infomation</h5>
-
-                                    <p class="d-flex mb-2">
-                                        <i class="bi-geo-alt me-2"></i>
-                                        Akershusstranda 20, 0150 Oslo, Norway
-                                    </p>
-
-                                    <p class="d-flex mb-2">
-                                        <i class="bi-telephone me-2"></i>
-
-                                        <a href="tel: 120-240-9600">
-                                            120-240-9600
-                                        </a>
-                                    </p>
-
-                                    <p class="d-flex">
-                                        <i class="bi-envelope me-2"></i>
-
-                                        <a href="mailto:info@yourgmail.com">
-                                            donate@charity.org
-                                        </a>
-                                    </p>
-
-                                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 col-12 mx-auto">
-                            <form class="custom-form contact-form" action="#" method="post" role="form">
-                                <h2>Contact form</h2>
-
-                                <p class="mb-4">Or, you can just send an email:
-                                    <a href="#">info@charity.org</a>
-                                </p>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Jack" required>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Doe" required>
-                                    </div>
-                                </div>
-
-                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com" required>
-
-                                <textarea name="message" rows="5" class="form-control" id="message" placeholder="What can we help you?"></textarea>
-
-                                <button type="submit" class="form-control">Send Message</button>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </section> -->
         </main>
-        <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
         <footer class="site-footer">
             <div class="container">
                 <di class="row">
-                    <!-- <div class="col-lg-2 col-12 mb-4">
-                        <img src="images/logo.png" class="logo bottom-logo img-fluid" alt="">
-                    </div> -->
 
                     <div class="col-lg-5 col-md-6 col-12 mb-4">
                         <h5 class="site-footer-title mb-3">Our Services</h5>
