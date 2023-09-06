@@ -69,8 +69,8 @@
         </nav>
 
         <main>
-
-            <section style="padding-bottom: 100px; padding-top: 40px;">
+            <!-- 
+                <section style="padding-bottom: 100px; padding-top: 40px;">
 
                 <style>
                     .about-section-new{
@@ -129,6 +129,98 @@
 
                 </div>
                 
+            </section>
+             -->
+            <section class="parallax-section section-padding">
+                <style>
+                    .parallax-section {
+                        height: 100vh;
+                        background-image: url('/images/start-up-graph.jpg');
+                        background-attachment: fixed;
+                        background-position: center 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                </style>
+                <script>
+                    window.addEventListener('scroll', function() {
+                        const scrolled = window.scrollY;
+                        const parallaxSections = document.querySelectorAll('.parallax-section');
+                        
+                        parallaxSections.forEach(section => {
+                            const speed = parseFloat(section.getAttribute('data-speed')) || 0.5; // Adjust the speed as needed
+                            const yPos = -(scrolled * speed);
+                            section.style.backgroundPosition = `center ${yPos}px`;
+                        });
+                    });
+                </script>
+                <style>
+                    .about-section-new{
+                        display: flex;
+                        padding: 0 150px;
+                        justify-content: space-around;
+                    }
+                    .about-image-new img{
+                        max-width: 100%;
+                        min-width: 38vw;
+                    }
+                    .about-content-new{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        padding: 25px;
+                        row-gap: 15px;
+                    }
+                    .about-content-new p{
+                        font-size: 24px;
+                    }
+                    .about-content-new h1{
+                        font-size: 90px;
+                        color: var(--primary-color);
+                    }
+                    .about-content-new h3{
+                        color: var(--primary-color);
+                    }
+                    @media (max-width: 768px) {
+                        .about-section-new{
+                            flex-direction: column;
+                            width: 100%;
+                            justify-content: center;
+                            padding: 0px 0;
+                        }
+                        .about-content-new p{
+                            font-size: 24px;
+                        }
+                        .about-content-new h1{
+                            font-size: 50px;
+                            color: var(--secondary-color);
+                        }
+
+                    }
+                    @media (max-width: 768px) {
+                        .about-content-new h1{
+                        color: var(--primary-color);
+                    }
+
+                    }
+                </style>
+
+                <div class="about-section-new">
+
+
+                    <div class="about-content-new">
+                        <h1>NSCO Consulting<br>Private Limited</h1>
+                        <p>
+                            NSCO is a boutique financial firm committed to empowering clients<br>with expert guidance and a strong financial ecosystem.
+
+                        </p>
+                        
+                        <a style="width: 245px; font-size: 18px;" class="nav-link custom-btn custom-border-btn btn" href="/contact.html">Contact Us</a>
+                    </div>
+
+                </div>
             </section>
 
             <section class="cta-section section-padding section-bg">
@@ -215,7 +307,17 @@
             </section>
 
             <section class="section-padding section-bg" id="section_2">
-                <div style="padding: 0 100px;">
+                <style>
+                    .entire-services-four-box{
+                        padding: 0 100px;
+                    }
+                    @media (max-width: 768px) {
+                        .entire-services-four-box{
+                            padding: 0 40px;
+                    }
+                    }
+                </style>
+                <div class="entire-services-four-box">
                     <div class="row">
 
                         <div class="col-lg-6 col-12">
@@ -1475,7 +1577,7 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
-        <div class="whatsapp-icon">
+        <!-- <div class="whatsapp-icon">
             <a href="https://wa.me/+919910856111" target="_blank">
                 <img src="https://img.icons8.com/clouds/100/whatsapp.png" alt="WhatsApp">
             </a>
@@ -1511,7 +1613,7 @@
                     width: 60px;
                 }
             }
-        </style>
+        </style> -->
 
         <!-- JAVASCRIPT FILES -->
         <script src="/js/jquery.min.js"></script>
