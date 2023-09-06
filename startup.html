@@ -172,73 +172,107 @@
 
                 </div>
             </section> -->
-             <section style="padding-bottom: 100px; padding-top: 40px;">
 
+            <section class="section-padding startup-home">
                 <style>
-                    .about-section-new{
+                    .startup-home{
+                        min-height: 80vh;
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                            url(/images/banner11.png);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: none;
+                    }
+                    .flex-container {
                         display: flex;
-                        padding: 0 150px;
-                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin-top: 50px;
                     }
-                    .about-image-new img{
-                        max-width: 100%;
-                        min-width: 38vw;
+
+                    .box {
+                        flex: 0 0 calc(50% - 10px); /* Two boxes per row, with some spacing */
+                        margin-bottom: 50px;
+                        background-color: #fff;
+                        text-align: center;
+                        padding: 20px;
+                        box-sizing: border-box;
                     }
-                    .about-content-new{
+
+                    @media (min-width: 768px) {
+                        /* On screens wider than 768px (typical desktop), show all 4 boxes in a row */
+                        .box {
+                            flex: 0 0 calc(25% - 10px); /* Four boxes per row */
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        .startup-top-content{
+                            padding: 0px 25px;
+                            text-align: center;
+                        }
+                    }
+                    .startup-top-content{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        padding: 25px;
-                        row-gap: 15px;
+                        align-items: center;
+                        row-gap: 25px;
                     }
-                    .about-content-new p{
+                    .startup-top-content p{
+                        color: white;
+                        font-size: 22px;
+                    }
+                    .startup-top-content h2{
+                        color: white;
+                        text-shadow: 0 0 3px;
+                        font-size: 50px;
+
+                    }
+                    .box img{
+                        height: 100px;
+                    }
+                    .box p{
                         font-size: 20px;
                     }
-                    .about-content-new h1{
-                        font-size: 45px;
-                        color: var(--secondary-color);
-                    }
-                    .about-content-new h3{
-                        color: var(--primary-color);
-                    }
-                    @media (max-width: 768px) {
-                        .about-section-new{
-                            flex-direction: column;
-                            width: 100%;
-                            justify-content: center;
-                            padding: 0px 0;
-                        }
-
-                    }
                 </style>
-
-                <div class="about-section-new">
-
-
-                    <div class="about-content-new">
-                        <h1>NSCO Consulting Private Limited</h1>
-                        <p>
-                            NSCO is a boutique financial and advisory services firm dedicated to empowering clients through expert financial guidance, a focus on results, and a commitment to creating a strong financial ecosystem that supports their core competencies.
-
-                        </p>
-                        
-                        <a style="width: 245px;" class="nav-link custom-btn custom-border-btn btn" href="/contact.html">Enquire Now</a>
-                    </div> 
-
-                    <div class="about-image-new">
-                        <img src="/images/Consulting-bro.svg" alt="">
+                <div class="all-wrapper-startup">
+                    <div class="startup-top-content">
+                        <h2>A Leading One Stop Solutions Provider</h2>
+                        <p>For all BUSINESS SUPPORT SERVICES required for all EARLY STAGE BUSINESSES and through their journey beyond</p>
                     </div>
+                    <div class="flex-container container">
 
+                        <div class="box">
+                            <img src="/images/special/icons/book_keeping.png" alt=""><br><br>
+                            <p>Starting Up Business</p>
+                        </div>
+
+                        <div class="box">
+                            <img src="/images/special/icons/gst.png" alt="">
+                            <p>Book Keeping, Legal and Complaince</p>
+                        </div>
+
+                        <div class="box">
+                            <img src="/images/special/icons/other_license.png" alt=""><br><br>
+                            <p>Protect your Brand</p>
+                        </div>
+
+                        <div class="box">
+                            <img src="/images/special/icons/audit.png" alt=""><br><br>
+                            <p>Grow your Brand</p>
+                        </div>
+
+                      </div>
                 </div>
-                
-            </section> 
+
+            </section>
 
         </main>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer class="site-footer">
             <div class="container">
-                <di class="row">
+                <div class="row">
                     <!-- <div class="col-lg-2 col-12 mb-4">
                         <img src="images/logo.png" class="logo bottom-logo img-fluid" alt="">
                     </div> -->

@@ -23,7 +23,8 @@
         <link rel="manifest" href="/images/icons/site.webmanifest">
 
     </head>
-    
+    <style>
+    </style>
     <body id="section_1">
 
         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
@@ -365,8 +366,174 @@
                 </script>
             </section>
 
+            <section class="section-padding testimonial-carousel-new section-bg">
+                <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+                <script src="/js/swiper-bundle.min.js"></script>
+                
+                <style>
+                    .swiper-button-next, .swiper-button-prev {
+                        color: var(--primary-color);
+                    }
+                    .swiper-pagination-bullet-active {
+                        background-color: var(--primary-color); /* Change to your desired color */
+                    }
+                    .testimonial-carousel-new{
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 80vh;
+                    }
+                    .slide-container{
+                        max-width: 90%;
+                        padding: 25px;
+                    }
+                    .slide-content{
+                        margin: 0 40px;
+                        padding: 45px 20px;
+                        overflow: hidden;
+                    }
+                    .card{
+                        border: none;
+                        border-radius: 25px;
+                        background-color: #fff;
+                    }
+                    .overlay{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        background-color: var(--secondary-color);
+                        border-radius: 25px 25px 0 25px;
+                    }
+                    .overlay::before,
+                    .overlay::after{
+                        content: '';
+                        position: absolute;
+                        height: 40px;
+                        width: 40px;
+                        background-color: var(--secondary-color);
+                        right: 0;
+                        bottom: -40px;
+                    }
+                    .overlay::after{
+                        background-color: #fff;
+                        border: none;
+                        border-radius: 0 25px 0 0;
+                    }
+                    .image-content{
+                        position: relative;
+                        row-gap: 5px;
+                    }
+                    .card-image{
+                        position: relative;
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                        padding: 6px;
+                    }
+                    .card-image .card-img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        border: 4px solid var(--primary-color);
+                    }
+                    .image-content,
+                    .card-content{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 10px 14px;
+                    }
+                    .card-content .description{
+                        text-align: center;
+                    }
+                    .card-content .post{
+                        font-size: 20px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        .swiper-button-next, .swiper-button-prev {
+                            display: none;
+                        }
+                        .slide-content{
+                            margin: 0 10px;
+                        }
+                    }
+                </style>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination" style="margin-top: 15px; color: var(--primary-color); !important"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".slide-content", {
+                      slidesPerView: 1,
+                      spaceBetween: 25,
+                      centerSlide: true,
+                      face: true,
+                      grabCursor: true,
+                      loop: true,
+                      pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                        dynamicBullets: true,
+                      },
+                      navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                      },
+                      breakpoints: {
+                        0: {
+                            slidesPerView: 1,
+                        }
+                      }
+                    });
+                  </script>
+            </section>
 
-            <section class="section-padding">
+            <!-- <section class="section-padding">
                 <div class="row">
                     <h2 align="center">Response from Major Korean</h2>
                     <div class="all testimonial-carousel-new">
@@ -531,7 +698,7 @@
                   </script>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
         <footer class="site-footer">
             <div class="container">
