@@ -224,6 +224,9 @@
                     .box p{
                         font-size: 20px;
                     }
+                    .startup-services-box-heading{
+                        font-size: 20px;
+                    }
                 </style>
                 <div class="all-wrapper-startup">
                     <div class="startup-top-content">
@@ -256,10 +259,494 @@
                 </div>
 
             </section>
+            <section class="section-padding testimonial-carousel-new section-bg">
+                <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+                <script src="/js/swiper-bundle.min.js"></script>
+                
+                <style>
+                    .swiper-button-next, .swiper-button-prev {
+                        color: var(--primary-color);
+                    }
+                    .swiper-pagination-bullet-active {
+                        background-color: var(--primary-color); /* Change to your desired color */
+                    }
+                    .testimonial-carousel-new{
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 80vh;
+                    }
+                    .slide-container{
+                        max-width: 90%;
+                        padding: 25px;
+                    }
+                    .slide-content{
+                        margin: 0 40px;
+                        padding: 45px 20px;
+                        overflow: hidden;
+                    }
+                    .card{
+                        border: none;
+                        border-radius: 25px;
+                        background-color: #fff;
+                    }
+                    .overlay{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        background-color: var(--secondary-color);
+                        border-radius: 25px 25px 0 25px;
+                    }
+                    .overlay::before,
+                    .overlay::after{
+                        content: '';
+                        position: absolute;
+                        height: 40px;
+                        width: 40px;
+                        background-color: var(--secondary-color);
+                        right: 0;
+                        bottom: -40px;
+                    }
+                    .overlay::after{
+                        background-color: #fff;
+                        border: none;
+                        border-radius: 0 25px 0 0;
+                    }
+                    .image-content{
+                        position: relative;
+                        row-gap: 5px;
+                    }
+                    .card-image{
+                        position: relative;
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                        padding: 6px;
+                    }
+                    .card-image .card-img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        border: 4px solid var(--primary-color);
+                    }
+                    .image-content,
+                    .card-content{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 10px 14px;
+                    }
+                    .card-content .description{
+                        text-align: center;
+                    }
+                    .card-content .post{
+                        font-size: 20px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        .swiper-button-next, .swiper-button-prev {
+                            display: none;
+                        }
+                        .slide-content{
+                            margin: 0 10px;
+                        }
+                    }
+                </style>
+                <div class="slide-container swiper">
+                    <h2 align="center" class="mb-5 mt-0">What Startups say About Us</h2>
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+    
+                                    <div class="card-image">
+                                        <img class="card-img" src="/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content">
+                                    <h2 class="name">Santa Test</h2>
+                                    <h4 class="post">Co-Founder BookishSanta</h4>
+                                    <p class="description">test description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minus hic eaque itaque earum nihil?</p>
+                                </div>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination" style="margin-top: 15px; color: var(--primary-color) !important;"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".slide-content", {
+                      slidesPerView: 3,
+                      spaceBetween: 25,
+                      centerSlide: true,
+                      face: true,
+                      grabCursor: true,
+                      loop: true,
+                      pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                        dynamicBullets: true,
+                      },
+                      navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                      },
+                      breakpoints: {
+                        0: {
+                            slidesPerView: 1,
+                        },
+                        520: {
+                            slidesPerView: 2,
+                        },
+                        950: {
+                            slidesPerView: 3,
+                        }
+                      }
+                    });
+                  </script>
+            </section>
+            <section class="startup-services section-padding-custom">
+                <div class="startup-services-content" style="text-align: center;">
+                    <h2>What We Provide</h2>
+                    <p>Our consultancy streamlines startup growth, solving finance challenges under one roof.</p>
+                </div>
+                <div class="container startup-services-wrapper my-5">
 
+                    <div class="flex-item">
+                        <img width="50px" src="/images/special/icons/book_keeping.png" alt="">
+                        <h4 class="my-4 startup-services-box-heading">Pitch Desk</h4>
+                    </div>
+                    <div class="flex-item">
+                        <img width="50px" src="/images/special/icons/book_keeping.png" alt="">
+                        <h4 class="my-4 startup-services-box-heading">Complainces / Legal</h4>
+                    </div>
+                    <div class="flex-item">
+                        <img width="50px" src="/images/special/icons/book_keeping.png" alt="">
+                        <h4 class="my-4 startup-services-box-heading">Valuation</h4>
+                    </div>
+                    <div class="flex-item">
+                        <img width="50px" src="/images/special/icons/book_keeping.png" alt="">
+                        <h4 class="my-4 startup-services-box-heading">Financial Modeling</h4>
+                    </div>
+
+                    <div class="flex-item">
+                        <img width="50px" src="/images/special/icons/book_keeping.png" alt="">
+                        <h4 class="my-4 startup-services-box-heading">Startup India Registration</h4>
+                    </div>
+                    <div class="flex-item">
+                        <img width="50px" src="/images/special/icons/book_keeping.png" alt="">
+                        <h4 class="my-4 startup-services-box-heading">Growth Consuliting</h4>
+                    </div>
+                    <div class="flex-item">
+                        <img width="50px" src="/images/special/icons/book_keeping.png" alt="">
+                        <h4 class="my-4 startup-services-box-heading">Strategic Tie Ups</h4>
+                    </div>
+                    <div class="flex-item">
+                        <img width="50px" src="/images/special/icons/book_keeping.png" alt="">
+                        <h4 class="my-4 startup-services-box-heading">Problem</h4>
+                    </div>
+
+                </div>
+                <style>
+                    .startup-services-wrapper{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        justify-content: space-between;
+                        row-gap: 20px;
+                    }
+                    .flex-item {
+                        background-color: var(--section-bg-color);
+                        border-radius: 15px;
+                        padding: 20px;
+                        text-align: center;
+                        flex: 0 1 calc(25% - 10px); /* 4 items per row on desktop */
+                    }
+
+                    /* Media query for mobile devices */
+                    @media (max-width: 768px) {
+                        .flex-item {
+                            flex: 0 1 calc(50% - 10px); /* 2 items per row on mobile */
+                        }
+                    }
+                    .section-padding-custom{
+                        padding-top: 100px;
+                        padding-bottom: 0;
+                    }
+                    @media screen and (max-width: 991px) {
+                        .section-padding {
+                            padding-top: 50px;
+                            padding-bottom: 0px;
+                        }
+                    }
+                </style>
+            </section>
+
+            <section class="section-padding section-tilted">
+                
+                <style>
+                    .section-tilted {
+                        width: 100%; 
+                        min-height: 700px; 
+                        background-image: url('/images/tilted-background.png');
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                    }
+                    .tilted-heading{
+                        color: white !important;
+                        text-shadow: 0 0 3px;
+                        font-size: 50px;
+                    }
+                    .tilted-para{
+                        color: #fff;
+                    }
+                    @media (max-width: 768px) {
+                    .section-tilted{
+                        padding-bottom: 400px;
+                    }
+                    }
+                  </style>
+               
+                <div class="about-section-new">
+
+                    <div class="about-image-new">
+                        <img height="500px" src="/images/high-five-hands-bro.svg" alt="">
+                    </div>
+
+
+                    <div class="about-content-new" style="row-gap: 25px;">
+                        <!-- <h3>About us</h3> -->
+                        <h1 class="tilted-heading">Why Choose NSCO</h1>
+                        <p class="tilted-para">Entrepreneurs seeking reliable startup consultancy and financial solutions should choose NSCO. With expertise in financial planning and regulatory compliance, NSCO fosters growth and offers ongoing support for long-term success.
+                        </p>
+                        <p class="tilted-para">
+                            NSCO's dedication to staying current with industry trends and regulations ensures startups receive up-to-date advice, minimizing risks, and maximizing opportunities. They're the ideal choice for dependable startup consultancy and financial solutions.
+                        </p>
+                    </div> 
+
+                </div>
+                
+            </section>
+
+            <section class="section-padding">
+                <div class="about-section-new">
+
+                    <div class="about-image-new">
+                        <img src="/images/apply_boy.png" alt="">
+                    </div>
+
+                    <div class="about-content-new">
+                        <h3>What We Do</h3>
+                        <h1>Why Choose NSCO</h1>
+                        <p>
+                            NSCO is one stop solution for all your financial needs needs, we will help you in everthing that you may need.
+                        </p>
+                        <ul class="custom-list my-2">
+                            <li class="custom-list-item d-flex">
+                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                We help you in your registration
+                            </li>
+
+                            <li class="custom-list-item d-flex">
+                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                We help you in your registration
+                            </li>
+
+                            <li class="custom-list-item d-flex">
+                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                We help you in your registration
+                            </li>
+
+                            <li class="custom-list-item d-flex">
+                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                We help you in your registration
+                            </li>
+                        </ul>
+                        
+                        <p class="mt-2">
+                            NSCO is one stop solution for all your financial needs needs, we will help you in everthing that you may need.
+                        </p>
+                    </div> 
+                    
+
+                </div>
+                <style>
+                    .about-section-new{
+                        display: flex;
+                        padding: 0 150px;
+                        justify-content: space-around;
+                    }
+                    .about-image-new img{
+                        max-width: 100%;
+                        min-width: 38vw;
+                    }
+                    .about-content-new{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 25px;
+                    }
+                    .about-content-new p{
+                        font-size: 20px;
+                    }
+                    .about-content-new h1{
+                        font-size: 45px;
+                        color: var(--secondary-color);
+                    }
+                    .about-content-new h3{
+                        color: var(--primary-color);
+                    }
+                    @media (max-width: 768px) {
+                        .about-section-new{
+                            flex-direction: column;
+                            width: 100%;
+                            justify-content: center;
+                            padding: 0px 0;
+                        }
+
+                    }
+                </style>
+            </section>
         </main>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
